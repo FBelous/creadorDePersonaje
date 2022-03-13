@@ -1,0 +1,79 @@
+/*Agregar una font dentro de la carpeta "fonts"*/
+
+@font-face {
+  font-family: "IntegralCF-BoldOblique";
+  src: url(fonts/IntegralCF-BoldOblique.woff);
+}
+
+@font-face {
+  font-family: "IntegralCF-Oblique";
+  src: url(fonts/IntegralCF-RegularOblique.woff);
+}
+
+@font-face {
+  font-family: "Regular";
+  src: url(fonts/IntegralCF-Regular.woff);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: rgb(246, 206, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(246, 206, 255, 1) 0%,
+    rgba(192, 125, 208, 1) 20%,
+    rgba(176, 0, 219, 1) 95%,
+    rgba(51, 19, 59, 1) 100%
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-bottom: 70px;
+  justify-content: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "IntegralCF-Oblique", "Roboto", sans-serif;
+}
+
+p {
+  font-family: "Regular";
+}
+
+#contenedorGeneral {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+#tituloPagina {
+  width: 100%;
+}
+
+#ingresarDatosPersonaje {
+  font-family: "IntegralCF-Oblique", "Roboto", sans-serif;
+  font-size: 1rem;
+  margin: auto;
+  padding-top: 50px;
+  text-align: left;
+  justify-content: center;
+  width: 30%;
+}
+
+#ingresarDatosPersonaje input {
+  font-size: 14px;
+  box-shadow: 0 0 8px 3px #d58dff;
+  margin-bottom: 10px;
+}
+#ingresarDatosPersonaje button {
+  font-size: 14px;
+  background-color: #fbb4ff;
+  box-shadow: 0 0 8px 3px #d58dff;
+}
+#botonesDeCreacion button{
+    margin-bottom: 10px;
+}

@@ -18,13 +18,11 @@
 body {
   font-family: "Roboto", sans-serif;
   background: rgb(246, 206, 255);
-  background: linear-gradient(
-    180deg,
-    rgba(246, 206, 255, 1) 0%,
-    rgba(192, 125, 208, 1) 20%,
-    rgba(176, 0, 219, 1) 95%,
-    rgba(51, 19, 59, 1) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(246, 206, 255, 1) 0%,
+      rgba(192, 125, 208, 1) 20%,
+      rgba(176, 0, 219, 1) 95%,
+      rgba(51, 19, 59, 1) 100%);
   background-repeat: no-repeat;
   background-attachment: fixed;
   margin-bottom: 70px;
@@ -44,36 +42,47 @@ p {
   font-family: "Regular";
 }
 
-#contenedorGeneral {
+section {
+  display: flex;
+}
+
+.tituloPagina {
+  text-align: center;
+  width: 100%;
+}
+
+.contenedorGeneral {
   display: flex;
   align-items: center;
   text-align: center;
 }
 
-#tituloPagina {
-  width: 100%;
-}
-
-#ingresarDatosPersonaje {
+.ingresarDatosPersonaje {
   font-family: "IntegralCF-Oblique", "Roboto", sans-serif;
   font-size: 1rem;
   margin: auto;
   padding-top: 50px;
-  text-align: left;
-  justify-content: center;
-  width: 30%;
 }
 
-#ingresarDatosPersonaje input {
+.ingresarDatosPersonaje input {
   font-size: 14px;
   box-shadow: 0 0 8px 3px #d58dff;
   margin-bottom: 10px;
 }
-#ingresarDatosPersonaje button {
+
+.ingresarDatosPersonaje button {
   font-size: 14px;
   background-color: #fbb4ff;
   box-shadow: 0 0 8px 3px #d58dff;
+  margin-bottom: 10px;
 }
-#botonesDeCreacion button{
-    margin-bottom: 10px;
+
+.contenedorPersonaje {
+  margin: auto;
+  text-align: left;
+}
+
+#paraSeleccionar {
+  margin: auto;
+  visibility: hidden;
 }

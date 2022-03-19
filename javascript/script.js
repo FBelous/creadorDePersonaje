@@ -129,4 +129,8 @@ function respuestaClick() {
     <p>${nombresStats[4] + ': ' + personaje.wisdom}</p>
     <p>${nombresStats[5] + ': ' + personaje.charisma}</p>
     `
+
+    Swal.fire(
+        'Se creó el personaje!'
+      );
 }
